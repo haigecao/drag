@@ -1,0 +1,433 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+
+@import "compass/reset", "variables", "mixin", "extend";
+
+@font-face {
+  font-family: 'font-qunar';
+  src: url("http://source.qunarzz.com/fonts/yo/1.0.0/yofont.woff") format("woff"), url("http://source.qunarzz.com/fonts/yo/1.0.0/yofont.ttf") format("truetype");
+}
+	
+
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+// space full screen
+.invoiceSchedulePage-AddData {
+	width:100%;
+	height:100%;
+	position: relative;
+}
+
+.body {
+	position:relative; 
+	background-color:#fff;
+}
+
+.invoiceSchedulePage {
+	@include width-height(100%, 100%);
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:10;
+	background-color:#fff;
+}
+
+// ------------------------------top----------------------------------//
+
+// include title and mail-state
+.invoiceSchedule-top, .header {
+	@include width-height(100%, auto);
+	background-color:$top-color;
+}
+
+// mail title area
+.invoiceSchedule-top-title {
+	position: relative;
+	height: $top-title-height;
+	@extend %display-flex ;
+	@extend %sub-center;
+	z-index:10;
+}
+.invoiceSchedule-top-title-left {
+	@extend %flex-grow-one;
+}
+.invoiceSchedule-icon-one {
+	@include mg-left($f10);
+	font-family: 'font-qunar';
+}
+
+
+// mail title content
+.invoiceSchedule-top-title-content {
+	@extend %flex-grow-one;
+	text-align:center;
+	@include font-size-bold($f18);
+	color:#fff;
+}
+
+.invoiceSchedule-top-title-right {
+	@extend %flex-grow-one;
+}
+
+// mail state show
+.mail-state {
+	height: $top-mail-state-hegiht;
+	@extend %display-flex ;
+}
+
+// Five of equal area
+.mail-state-flex {
+	@extend %flex-grow-one;
+}
+
+//	In half area line drawing
+.mail-status-gui {
+	@include width-height(100%, $f32);
+	@extend %display-flex ;
+	@extend %sub-center;
+}
+
+
+// mail state left side
+.mail-status-gui-left {
+	@extend %flex-grow-one;
+	@include width-height(100%, $f32);
+	@extend %sub-center;
+}
+
+// mail state right side
+.mail-status-gui-right{
+	@extend %flex-grow-one;
+	@include width-height(100%, $f32);
+	@extend %sub-center;
+}
+
+
+//	first area progress line
+.mail-status-gui-line {
+	border-bottom:$f2 solid #fff;
+	@include width-height(100%, $f2);
+
+}
+
+//	first area progress line
+.mail-status-gui-not-line {
+	border-bottom:$f2 solid #60c3cf;
+	@include width-height(100%, $f2);
+
+}
+
+// mail point drawing 
+.mail-status-gui-point {
+	@include point-size-header($f9);
+}
+
+// mail point and don't finish
+.mail-status-gui-grey-point {
+	@include point-size-grey-point($f9);	
+
+}
+
+// mail point drawing 
+.mail-status-gui-point-max {
+	@include point-size-header($f18);
+	text-align:center;
+}
+
+.icon-two {
+	font-family: 'font-qunar';
+	font-weight: bold;
+}
+
+
+// mail status content area
+.mail-status-content {
+	@extend %sub-center;
+}
+
+// setting mail status content font 
+.mail-status-content-discribe {
+	@include font-col($f12, #fff);
+}
+
+
+// ------------------mial status and mail message -----------------------//
+.mail-msg {
+	@include width-height(100%, auto);
+	@extend %display-flex;
+	@include font-col($f12, #9a9a9a);
+}
+
+.mail-msg-status {
+	@extend %flex-grow-one;
+}
+
+.mail-msg-status-title {
+	@extend %display-flex;
+	@include mg-top($f17);
+	align-items: flex-end; 
+}
+
+
+.mail-msg-status-title-lable {
+	@include mg-left($f15);
+	@include mg-right($f21);
+}
+
+.mail-msg-status-title-company {
+	@include font-col($f15, #333333);
+	@extend %flex-grow-one;
+}
+
+
+.mail-msg-status-state {
+	@include mg-top($f10);
+	@extend %display-flex;
+	align-items: flex-start;
+}
+
+.mail-msg-status-state-lable {
+	@extend .mail-msg-status-title-lable;
+	line-height:$f18;
+}
+
+.mail-msg-status-state-comtent {
+	line-height:$f18;
+	color: #32b16c;
+	@extend %flex-grow-one;
+}
+
+.mail-line-space {
+	height:$f1;
+	margin:$f17 $f15 0 $f15;
+}
+
+
+
+.mail-data {
+	@include font-col($f12, #9a9a9a);
+}
+
+.mail-data-title {
+	@extend .mail-msg-status-title;
+}
+
+.mail-data-title-lable {
+	@extend .mail-msg-status-title-lable;
+
+}
+
+.mail-data-title-company {
+	@extend .mail-msg-status-title-company;
+}
+
+
+.mail-data-mark {
+	@include mg-top($f10);
+	@extend %display-flex;
+	align-items: baseline;
+}
+
+.mail-data-mark-lable {
+	@include mg-left($f15);
+	@include mg-right($f21);
+}
+
+.mail-data-mark-comtent {
+	line-height:$f14;
+	@extend %flex-grow-one;
+	@include mg-right($f36);
+}
+
+.mail-user-data {
+	@include mg-top($f15);
+	@include width-height(100%, 100%);
+	@include font-col($f12, #9a9a9a);
+
+}
+
+.mail-user-data-person {
+	@extend %display-flex;
+	@include mg-top($f15);
+}
+
+.mail-user-data-person-lable {
+	@include mg-left($f15);
+	@include mg-right($f10);
+
+}
+
+.mail-user-data-person-data {
+	@extend .mail-data-title-company;
+}
+
+
+.mail-msg-goIcon  {
+	@include flex-basis($f36);
+	font-family: 'font-qunar';
+	@extend %display-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include mg-top($f3);
+}
+.icon-go {
+	@extend %f12;
+}
+
+
+.blank-area-one {
+	@include width-height(100%, $f10);
+	background-color: #f0f2f4;
+	@include mg-top($f16);
+	@include mg-buttom($f20);
+
+}
+
+
+.logisticStatus-road {
+	@include mg-left($f19);
+	border-left:2px solid #dddddd;
+	@include font-col($f12, #ababab);
+	position:relative;
+}
+
+.logisticStatus-road-cur {
+	@extend .logisticStatus-road-pro;
+	@include font-size-bold-col($f15, #1ba9ba);
+}
+
+.logisticStatus-road-pro-number {
+	position:absolute;
+	@include width-height($f18, $f18);
+	@include font-size-bold-col($f15, #ababab);
+	border:$f2 solid #ababab;
+	border-radius:50%;
+	background-color:#fff;
+	left:-$f37;
+	top:-$f3;
+	text-align:center;
+	z-index:10;
+}
+
+.logisticStatus-road-cur-number {
+	position:absolute;
+	@include width-height($f18, $f18);
+	border:$f2 solid #1ba9ba;
+	border-radius:50%;
+	background-color:#fff;
+	font-size:$f15;
+	left:-$f37;
+	top:-$f3;
+	text-align:center;
+	z-index:10;
+}
+
+.logisticStatus-road-pro {
+	position:relative;
+	@include mg-left($f25);
+	@include mg-top($f16);
+}
+
+.logisticStatus-road-data {
+	position:relative;
+	@include mg-left($f25);
+	@include mg-top($f14);
+}
+
+.logisticStatus-road-data:after {
+	content: '';
+	position:absolute;
+	left:-$f30;
+	top:$f3;
+	@include width-height($f7, $f7);
+	background-color:#ababab;
+	border-radius:50%;
+	// background-color:red;
+}
+
+.logisticStatus-road-content {
+	@include mg-left($f25);
+	@include mg-top($f9);
+	@include mg-right($f15);
+
+	line-height:$f15;
+}
+
+.blank-line-in-road {
+	background-color:#dddddd;
+	margin:$f15 0 0 $f25;
+	padding:0 $f25 0 0;
+	@include width-height(100%, $f1);
+
+}
+
+// ------------------------------buttom----------------------------------//
+// app buttom 
+.bottom {
+	// position:relative;
+	@include width-height(100%, $f56);
+	@extend %sub-center;
+	background-color:#fefefe;
+}
+
+// app buttom content disable
+.buttom-content {
+	@include width-height(14.5rem,$f37);
+	border:1px solid #1ba9ba;
+	@include font-size-bold-col($f16, #1ba9ba);
+	@extend %sub-center;
+}
+
+
+#wrapper, #wrapperTwo {
+	position: absolute;
+	z-index: 1;
+	top: $f48;
+	bottom: $f0;
+	left: $f0;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+
+#scroller, #scrollerTwo {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	height:auto;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+
+
+
+
+
+
+
+

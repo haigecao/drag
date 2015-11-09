@@ -1,0 +1,67 @@
+
+// Child node in the middle
+%sub-center {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+// font size 
+%f10 {
+	font-size:$f10;
+}
+%f12 {
+	font-size:$f12;
+}
+%f14 {
+	font-size:$f14;
+}
+
+%f15 {
+	font-size:$f15;
+}
+
+%f16 {
+	font-size:$f16;
+}
+
+// font-weight: bold;
+%font-weight {
+	font-weight: bold;
+}
+
+%flex-alignSelf-end {
+	display: flex;
+	align-self: flex-end;
+}
+
+%flex-alignItem-start {
+	display:flex;
+	align-items: flex-start;
+}
+
+
+// flex grow
+%flex-grow-one {
+	flex:1;
+}
+
+
+// display -> flex
+%display-flex {
+	display:flex;
+}
+
+//color:#fff;
+%color-write {
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+

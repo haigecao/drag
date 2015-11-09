@@ -1,0 +1,74 @@
+{
+    "ver": "1.0",
+    "ret": true,
+    "errcode": 0,
+    "errmsg": "",
+    "data": {
+        "invoiceInfo": {
+            "buyCompany": "邵麟",
+            "invoiceComment": "酒店名称：贵阳空港君亿豪城大酒店\n入离店时间：2015-09-19 2015-09-20",
+            "invoiceAmount": "250.0",
+            "recipient": "邵麟",
+            "address": "贵州省盘县柏果镇朝阳小学",
+            "invoiceDoc": "CAL000000000009289",
+            "mailNo": "588073602830",
+            "mailCompany": "天津申通（到付）",
+	    "companyCode":"shengtong",
+	    "companyImg":"none",
+            "expressStatsName": "运输中"
+        },
+        "invoiceAdvance": {
+
+            "invoiceNoteList": [
+                {
+                    "note": "申请开票",
+                    "status": 1
+                },
+                {
+                    "note": "待审核",
+                    "status": 1
+                },
+                {
+                    "note": "已审核",
+                    "status": 1
+                },
+                {
+                    "note": "已开票",
+                    "status": 1
+                },
+                {
+                    "note": "已邮寄",
+                    "status": 3
+                }
+            ],
+            "invoiceAdvanceList": [
+                {
+                    "invoiceStatus": 1,
+                    "title": "已邮寄",
+
+                    "content": "您的发票已经开具啦！1天内将有快递员开始派送哦~"
+                },
+                {
+                    "invoiceStatus": 1,
+                    "title": "已开票",
+                    "content": "您的发票已经开具啦！1天内将有快递员开始派送哦~"
+                },
+                {
+                    "invoiceStatus": 1,
+                    "title": "已审核",
+                    "content": "您的发票信息已经核实无误啦！开票大概需要1天时间，请耐心等待~"
+                },
+                {
+                    "invoiceStatus": 1,
+                    "title": "待审核",
+                    "content": "已经有发票专员在核实您的发票信息咯，审核大概需要1天的时间，请耐心等待~"
+                },
+                {
+                    "invoiceStatus": 1,
+                    "title": "申请开票",
+                    "content": "申请开票成功。该订单状态变为“已离店”后，将会有发票专员为您核实发票信息。"
+                }
+            ]
+        }
+    }
+}

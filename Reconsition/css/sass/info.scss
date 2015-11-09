@@ -1,0 +1,292 @@
+@import "compass/reset", "variables", "mixin", "extend";
+
+@font-face {
+  font-family: 'font-qunar';
+  src: url("http://source.qunarzz.com/fonts/yo/1.0.0/yofont.woff") format("woff"), url("http://source.qunarzz.com/fonts/yo/1.0.0/yofont.ttf") format("truetype");
+}
+
+
+// space full screen
+.body {
+	display: fixed;
+	flex-direction: column;
+	background-color:#fff;
+}
+
+
+//--------------------------------top header
+.logisticsInfoPage-top {
+	@extend %display-flex;
+	// @include width-height(100%, auto);
+	width:100%;
+	flex-basis: $f48;
+	background-color: #1ba8b9;
+}
+
+.logisticsInfoPage-top-left {
+	@extend %flex-grow-one;
+}
+.logisticsInfoPage-icon-one {
+	font-family: font-qunar;
+	@extend %font-weight;
+	@extend %color-write;
+	@include mg-top($f16);
+	@include mg-left($f9);
+}
+
+.logisticsInfoPage-top-middle {
+	@extend %flex-grow-one;
+	@extend %color-write;
+	@extend %font-weight;
+}
+
+.logisticsInfoPage-lable-connect {
+	@include width-height(100%, $f32);
+	text-align: center;
+	@include mg-top($f16); 
+}
+
+.logisticsInfoPage-top-right {
+	@extend %flex-grow-one;
+}
+
+
+//--------------------------------middle area
+
+.middle-logistics {
+	// @include width-height(100%, 60px);
+	@extend %display-flex;
+}
+
+.middle-logistics-left {
+	flex-basis:$f52;
+	height:100%;
+}
+
+.mail-logo {
+	@include width-height($f40, $f40);
+	@include mg-left($f20);
+	@include mg-top($f20);
+}
+
+.middle-logistics-right {
+	@include width-height(100%, auto);
+}
+.middle-logistics-right-status {
+	@include mg-left($f10);
+}
+
+.middle-logistics-company-status {
+	@include mg-top($f21);
+	@include font-size-bold-col($f15, #323232);
+}
+
+.middle-logistics-company-status-lable {
+	@include width-height($f56, $f15);
+	
+}
+
+.middle-logistics-company-status-content {
+	@include mg-left($f8);
+	color:#37af71;
+}
+
+.middle-logistics-company-srouce {
+	@include mg-top($f5);
+	@include font-size-bold-col($f13, #9a9a9a);
+	@include width-height(100%, $f14);
+}
+
+.middle-logistics-company-srouce-lable {
+	@include width-height($f56, $f14);
+}
+
+.middle-logistics-company-srouce-content {
+	@include mg-left($f8);
+}
+
+.middle-logistics-company-mailnumber {
+	@include mg-top($f3);
+	@include font-size-bold-col($f13, #9a9a9a);
+	@include width-height(100%, $f14);
+}
+
+.middle-logistics-company-mailnumber-lable {
+	@include width-height($f56, $f14);
+}
+
+.middle-logistics-company-mailnumber-content {
+	@include mg-left($f8);
+}
+
+.pleaceHolder-one {
+	@include width-height(100%, $f10);
+	background-color:#edeef0;
+	// @include mg-top(22px);
+}
+
+.logistics-location {
+	@include width-height(100%, auto);
+}
+
+.logistics-location-title {
+	@include width-height(100%, $f45);
+	@include font-size-bold-col($f14, #9a9a9a);
+}
+
+
+.logistics-location-title-lable {
+	@include mg-left($f10);
+	@include mg-top($f15);
+	// border-bottom:1px solid #dcdcdc;
+}
+
+.logistics-location-title-line {
+	@include mg-left($f10);
+	@include mg-top($f16);
+	border-bottom: $f1 solid #dcdcdc;
+}
+
+.logistics-location-status {
+	@include mg-left($f18);
+	@include width-height(auto, 100%);
+
+	border-left:$f2 solid #cdcdcd;
+	height: 100%;
+}
+
+//--------------------------------middle second logistics location
+
+.logistics-location-status-first {
+	@include font-size-bold-col($f12, #34b563);
+	@include mg-left($f13);
+	border-bottom:$f1 solid #cdcdcd;
+	position:relative;
+}
+
+.gui-drawing-first-spaceline:after {
+	content : "";
+	position:absolute;
+	top: 0px;
+	left: -$f15;
+	border-left:$f2 solid #fff;
+	height:50%;
+	z-index:100;
+	width:$f2;
+}
+.gui-drawing-first-spaceline :before {
+	content : "";
+	position:absolute;
+	top: 30%;
+	left: -$f23;
+	border:$f2 solid #85ebfa;
+	border-radius:50%;
+	height:$f15;
+	width:$f15;
+	background-color:#1ba8b9;
+	z-index:200;
+}
+
+
+.logistics-location-status-first-company {
+	@include width-height(100%, 100%);
+	line-height:$f30;
+}
+
+.logistics-location-status-first-data {
+	@include width-height(100%, $f28);
+	line-height:$f26;
+}
+
+
+.logistics-location-status-normal {
+	@include font-size-bold-col($f12, #878787);
+	@include mg-left($f13);
+	border-bottom:$f1 solid #cdcdcd;
+	position:relative;
+}
+
+
+.gui-drawing-normal-spaceline:after{
+	content : "";
+	position:absolute;
+	top: 50%;
+	left:-$f20;
+	border:$f2 solid #d3d3d3;
+	border-radius:50%;
+	height:$f7;
+	width:$f7;
+	background-color:#d3d3d3;
+	z-index:50;
+}
+
+
+.logistics-location-status-normal-company {
+	@extend .logistics-location-status-first-company;
+}
+
+.logistics-location-status-normal-data {
+	@extend .logistics-location-status-first-data;
+}
+
+.logistics-location-status-last {
+	@extend .logistics-location-status-normal;
+}
+
+.logistics-location-status-last-company {
+	@extend .logistics-location-status-first-company;
+}
+
+.logistics-location-status-last-data {
+	@extend .logistics-location-status-first-data;
+}
+
+.gui-drawing-last-spaceline:before{
+	content : "";
+	position:absolute;
+	border-left:$f2 solid #fff;
+	height:50%;
+	width:$f2;
+	top:50%;
+	left:-$f15;
+	z-index:10;
+}
+.gui-drawing-last-spaceline:after {
+	@extend .gui-drawing-normal-spaceline:after;
+}
+
+
+
+// #wrapper {
+// 	position: absolute;
+// 	top: $f48;
+// 	bottom: $f0;
+// 	left: $f0;
+// 	width: 100%;
+// 	flex:1;
+// 	overflow: hidden;
+// 	z-index:10;
+// }
+
+// #scroller {
+// 	position: absolute;
+// 	z-index: 1;
+// 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+// 	width: 100%;
+// 	height:auto;
+// 	-webkit-transform: translateZ(0);
+// 	-moz-transform: translateZ(0);
+// 	-ms-transform: translateZ(0);
+// 	-o-transform: translateZ(0);
+// 	transform: translateZ(0);
+// 	-webkit-touch-callout: none;
+// 	-webkit-user-select: none;
+// 	-moz-user-select: none;
+// 	-ms-user-select: none;
+// 	user-select: none;
+// 	-webkit-text-size-adjust: none;
+// 	-moz-text-size-adjust: none;
+// 	-ms-text-size-adjust: none;
+// 	-o-text-size-adjust: none;
+// 	text-size-adjust: none;
+// }

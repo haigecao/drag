@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" name="viewport">
+	<title>LogisticsInformation</title>
+	<link rel="stylesheet" href="css/stylesheets/info.css">
+
+	</head>
+	<body>
+		<!-- 查看物流 头部固定 -->
+		<header class="top">
+			<div class="top-left">
+				<div class="icon-one">&#xf07d;</div>
+			</div>
+			<div class="top-middle">
+				<div class="lable-connect">查看物流</div>
+			</div>
+			<div class="top-right"></div>
+		</header> 		
+		
+		<!-- 滚动区域 包含 物流状态 和物流追踪 -->
+		<div id="wrapper">
+			<div id="scroller">
+		
+				<div class="middle-logistics">
+					<!-- js 追加 html 物流状态 -->
+				</div>
+				
+
+
+				<!-- 物流追踪 -->
+				<div class="logistics-location">
+					<!-- 占位符 显示一段留白 进行分块 -->
+					<div class="pleaceHolder-one"></div>
+					
+					<div class="logistics-location-title">
+						<div class="logistics-location-title-lable">物流追踪</div>
+						<hr class="logistics-location-title-line">
+					</div>
+
+					<div class="logistics-location-status">
+						<!-- js 加载 详细 物流信息 -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+
+<script type="text/javascript" src='comJs/zepto.js'></script>
+<script type="text/javascript" src="comJs/iscroll.js"></script>
+<script type="text/javascript" src="comJs/juicer-min.js"></script>
+<script type="text/javascript" src='pageJs/common.js'></script>
+<script type="text/javascript" src='pageJs/logisticsInfo.js'></script>
+
+</html>

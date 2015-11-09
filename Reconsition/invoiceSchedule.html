@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no" />
+<title>Invoice progress - has been mailed</title>
+<link rel="stylesheet" href="css/stylesheets/schedule.css">
+<link rel="stylesheet" href="css/stylesheets/info.css">
+
+
+
+</head>  
+<body>
+
+	<div class="invoiceSchedulePage">
+		<div class="invoiceSchedule-top">
+			<div class="invoiceSchedule-top-title">
+				<div class="invoiceSchedule-top-title-left">
+					<div class="invoiceSchedule-icon-one">&#xf07d;</div>
+				</div>
+				<div class="invoiceSchedule-top-title-content">发票进度</div>	
+				<div class="invoiceSchedule-top-title-right"></div>
+			</div>
+		</div>
+
+		<div id="wrapper">
+			<div id="scroller">
+
+				<div class="invoiceSchedulePage-AddData">
+					<!-- 添加后台数据 -->
+				</div>
+
+			</div>
+		</div>	
+		
+	</div>
+
+	<div class="logisticsInfoPage">
+		<!-- 查看物流 头部固定 -->
+		<header class="logisticsInfoPage-top">
+			<div class="logisticsInfoPage-top-left">
+				<div class="logisticsInfoPage-icon-one">&#xf07d;</div>
+			</div>
+			<div class="logisticsInfoPage-top-middle">
+				<div class="logisticsInfoPage-lable-connect">查看物流</div>
+			</div>
+			<div class="logisticsInfoPage-top-right"></div>
+		</header> 		
+		
+		<!-- 滚动区域 包含 物流状态 和物流追踪 -->
+		<div id="wrapperTwo">
+			<div id="scrollerTwo">
+		
+				<div class="middle-logistics">
+					<!-- js 追加 html 物流状态 -->
+				</div>
+
+				<!-- 物流追踪 -->
+				<div class="logistics-location">
+					<!-- 占位符 显示一段留白 进行分块 -->
+					<div class="pleaceHolder-one"></div>
+					
+					<div class="logistics-location-title">
+						<div class="logistics-location-title-lable">物流追踪</div>
+						<hr class="logistics-location-title-line">
+					</div>
+
+					<div class="logistics-location-status">
+						<!-- js 加载 详细 物流信息 -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<style>
+		.logisticsInfoPage {
+			height: auto;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			z-index: 100;
+			position: absolute;
+			display: none;
+			background-color: #fff;
+		}
+
+	</style>
+
+</body>
+<script type="text/javascript" src="comJs/iscroll.js"></script>
+<script type="text/javascript" src='comJs/zepto.js'></script>
+<script type="text/javascript" src="comJs/juicer-min.js"></script>
+<script type="text/javascript" src='pageJs/common.js'></script>
+<script type="text/javascript" src="pageJs/schedule.js"></script>
+<script type="text/javascript" src='pageJs/logisticsInfo.js'></script>
+
+</html>
+
+
+
+

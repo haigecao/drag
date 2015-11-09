@@ -1,0 +1,120 @@
+
+//margin-left offset
+@mixin mg-left ($marginLeft) {
+	margin-left:$marginLeft;
+}
+
+//margin-top offset
+@mixin mg-top ($marginTop) {
+	margin-top:$marginTop;
+}
+
+//margin-right offset
+@mixin mg-right ($marginRight) {
+	margin-right:$marginRight;
+}
+
+//margin-right offset
+@mixin mg-buttom ($marginButtom) {
+	margin-buttom:$marginButtom;
+}
+
+
+
+//padding-top offset
+@mixin pd-top ($marginTop) {
+	padding-top:$marginTop;
+}
+
+//padding-left offset
+@mixin pd-left ($paddingLeft) {
+	padding-left:$paddingLeft;
+}
+
+//padding-right offset
+@mixin pd-right ($paddingRigbt) {
+	padding-right:$paddingRigbt;
+}
+
+//padding-buttom offset
+@mixin pd-buttom ($paddingButtom) {
+	padding-buttom:$paddingButtom;
+}
+
+@mixin font-col($fsize, $fcolor) {
+	font-size:$fsize;
+	color:$fcolor;
+}
+
+// setting font bold and the argument is font size
+@mixin font-size-bold ($fsize) {
+	font-size:$fsize;
+	font-weight:bold;
+}
+
+@mixin font-size-bold-col($fsize, $fcolor) {
+	font-size:$fsize;
+	font-weight:bold;
+	color:$fcolor;
+}
+
+@mixin font-size-weight-col($fsize, $weight, $fcolor) {
+	font-size:$fsize;
+	font-weight:$weight;
+	color:$fcolor;
+}
+
+
+// setting width and height .
+@mixin width-height($width, $height) {
+	width:$width;
+	height:$height;
+}
+
+// point size 
+@mixin point-size-header($size) {
+	border:1px solid #fff;
+	border-radius:50%;
+	@include width-height($size, $size);
+	background-color:#fff;
+}
+
+// grey point size 
+@mixin point-size-grey-point($size) {
+
+	@include width-height($size, $size);
+	border:1px solid #60c3cf;
+	border-radius:50%;
+	background-color:#1ba9ba;
+}
+
+
+
+// flex-basis
+@mixin flex-basis($length) {
+	flex-basis:$length;
+}
+
+
+@mixin logisticStatus-road-pro-after($number) {
+	content:$number;
+	position:absolute;
+	@include width-height($f18, $f18);
+	border:$f2 solid #1ba9ba;
+	border-radius:50%;
+	background-color:#fff;
+	left:-$f36;
+	top:-$f3;
+	text-align:center;
+	z-index:10;
+}
+
+
+
+
+
+
+
+
+
+

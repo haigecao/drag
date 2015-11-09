@@ -1,0 +1,153 @@
+/* line 5, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/_variables.scss */
+html {
+  font-size: 20px;
+}
+
+/* line 24, ../sass/_extend.scss */
+.context {
+  font-size: 0.8rem;
+}
+
+/* line 29, ../sass/_extend.scss */
+.icon-one, .top-middle {
+  font-weight: bold;
+}
+
+/* line 45, ../sass/_extend.scss */
+.top-left, .top-middle, .top-right {
+  flex: 1;
+}
+
+/* line 51, ../sass/_extend.scss */
+.top {
+  display: flex;
+}
+
+/* line 56, ../sass/_extend.scss */
+.icon-one, .top-middle {
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'font-qunar';
+  src: url("http://source.qunarzz.com/fonts/yo/1.0.0/yofont.woff") format("woff"), url("http://source.qunarzz.com/fonts/yo/1.0.0/yofont.ttf") format("truetype");
+}
+/* line 10, ../sass/error.scss */
+.parent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 18, ../sass/error.scss */
+.top {
+  width: 100%;
+  height: 49px;
+  background-color: #1ba8b9;
+}
+
+/* line 27, ../sass/error.scss */
+.icon-one {
+  font-family: font-qunar;
+  margin-top: 16px;
+  margin-left: 9px;
+}
+
+/* line 41, ../sass/error.scss */
+.lable-connect {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* line 51, ../sass/error.scss */
+.middle {
+  width: 100%;
+  height: 448px;
+  background-color: #f0f2f4;
+}
+
+/* line 56, ../sass/error.scss */
+.img-luoto {
+  margin-top: 42px;
+  width: 150px;
+  height: auto;
+}
+
+/* line 62, ../sass/error.scss */
+.context {
+  text-align: center;
+}
+
+/* line 67, ../sass/error.scss */
+.buttom {
+  width: 100%;
+  height: 56px;
+  background-color: #fff;
+}
