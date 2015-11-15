@@ -12,4 +12,4 @@
 ###移动端的作业，所以需要浏览器开启手机的模式查看。
 
 ## 测试
-点击
+点击![区域](https://github.com/hgonlywj/drag/blob/master/Reconsition/img/%E4%B8%AD%E9%80%9A.png)  
