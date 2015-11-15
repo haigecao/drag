@@ -7,9 +7,11 @@
 ## 配置fekit
 --------------
 ###在first-twice文件目录下调用fekit
-                                
 ###输入fekit server -m mock/mock.js,然后在浏览器输入 127.0.0.1，访问invoiceSchedule.html文件即可。
 ###移动端的作业，所以需要浏览器开启手机的模式查看。
 
 ## 测试
-点击![区域](https://github.com/hgonlywj/drag/blob/master/Reconsition/img/%E4%B8%AD%E9%80%9A.png)  
+###(1)点击图片标注区域切换 查看物流 页面。
+![区域1](url)
+###(2)点击图片突变标注区域，页面切回到 发票进度 页面
+![区域2](url)
